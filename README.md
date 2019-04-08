@@ -1,6 +1,8 @@
 # pdp8life
 Conway's Game of Life for the PDP-8
 
+![Screenshot](screenshot.png)
+
 Requires 8k of memory at the moment; one field for the program, and
 one field for the bitmap. No operating system is supported yet, though
 this plus other features are coming, including VC8E (with and without
