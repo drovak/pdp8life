@@ -1,16 +1,22 @@
 # pdp8life
 Conway's Game of Life for the PDP-8
 
-![Screenshot](screenshot.png)
+![SimH VC8E output screenshot](screenshot_vc8e.png)
+
+![Terminal based output screenshot](screenshot.png)
 
 Requires 8k of memory at the moment; one field for the program, and
-one field for the bitmap. No operating system is supported yet, though
-this plus other features are coming, including VC8E (with and without
-a storage oscilloscope).
+one field for the bitmap. No operating system is supported yet, though.
+
+VC8E is supported for both storage and non-storage oscilloscopes. In
+storage mode, the screen is updated during computation of the current
+playing field. In non-storage mode, the playing field is displayed as a
+raster for some number of frames at the end of the playing field update.
 
 Assembles fine with `palbart` and should assemble fine with PAL8. 
-Starting address is 0200, and be sure you're using a video terminal with
-the font set very small (and a square font cell if possible).
+Starting address is 0200, and if you're not using the VC8E output, be sure
+you're using a video terminal with the font set very small (and a square 
+font cell if possible).
 
 Several assemble-time options are available, including many initial
 conditions from gliders to guns to fillers and more. The initial conditions
