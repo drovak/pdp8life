@@ -5,8 +5,12 @@ Conway's Game of Life for the PDP-8
 
 ![Terminal based output screenshot](screenshot.png)
 
+9-April-2019: Added fast raster mode, statistics, and TTY RLE parser.
+
 Requires 8k of memory at the moment; one field for the program, and
 one field for the bitmap. No operating system is supported yet, though.
+Will use 32k of memory if fast raster is used; this is still buggy and
+is not recommended.
 
 VC8E is supported for both storage and non-storage oscilloscopes. In
 storage mode, the screen is updated during computation of the current
@@ -21,3 +25,4 @@ font cell if possible).
 Several assemble-time options are available, including many initial
 conditions from gliders to guns to fillers and more. The initial conditions
 are all based on the standard RLE format, so adding more is very easy.
+You can also assemble with a flag to take RLE input from the TTY.
