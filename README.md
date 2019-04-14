@@ -5,12 +5,15 @@ Conway's Game of Life for the PDP-8
 
 ![Terminal based output screenshot](screenshot.png)
 
+14-April-2019: Added OS/8 support
 9-April-2019: Added fast raster mode, statistics, and TTY RLE parser.
+8-April-2019: Added VC8E support for both storage and non-storage 'scopes
 
 Requires 8k of memory at the moment; one field for the program, and
-one field for the bitmap. No operating system is supported yet, though.
-Will use 32k of memory if fast raster is used; this is still buggy and
-is not recommended.
+one field for the bitmap. Will use 32k of memory if fast raster is used; 
+this is still buggy and is not recommended. OS/8 support is basic at the
+moment; supports CTRL-C to exit. Also, CTRL-U will now restart the 
+program from the top.
 
 VC8E is supported for both storage and non-storage oscilloscopes. In
 storage mode, the screen is updated during computation of the current
